@@ -34,6 +34,7 @@ tr:hover { background: #f0f6ff; }
 <div class="tabs">
 <button class="tab active" onclick="showTab('boom')">大臂焊脚</button>
 <button class="tab" onclick="showTab('arm')">小臂焊脚</button>
+<button class="tab" onclick="showTab('modern-arm')">现代小臂焊脚</button>
 <button class="tab" onclick="showTab('kg1')">神钢1号</button>
 <button class="tab" onclick="showTab('modern')">现代设备</button>
 <button class="tab" onclick="showTab('kg8')">8号机</button>
@@ -48,24 +49,24 @@ tr:hover { background: #f0f6ff; }
 <table id="boom-table">
 <thead><tr><th>型号</th><th>凸台侧10#</th><th>中段11#</th><th>末端12#</th><th>耳座</th></tr></thead>
 <tbody>
-<tr><td>C10</td><td>6×12</td><td>6×12</td><td>6×12</td><td>8×8</td></tr>
-<tr><td>C14</td><td>6×12</td><td>6×12</td><td>6×12</td><td>8×8</td></tr>
-<tr><td>C17</td><td>6×16</td><td>6×16</td><td>6×12</td><td>10×10</td></tr>
-<tr><td>C18</td><td>6×16</td><td>6×16</td><td>6×12</td><td>10×10</td></tr>
-<tr><td>C19</td><td>8×16</td><td>8×16</td><td>8×16</td><td>10×10</td></tr>
-<tr><td>C19W</td><td>8×16</td><td>8×16</td><td>8×16</td><td>10×10</td></tr>
-<tr><td>C22</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td></tr>
-<tr><td>C25</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td></tr>
-<tr><td>C30</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td></tr>
-<tr><td>C30W</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td></tr>
-<tr><td>C33</td><td>8×22</td><td>8×22</td><td>8×19</td><td>14×14</td></tr>
-<tr><td>C36</td><td>8×22</td><td>8×22</td><td>8×19</td><td>14×14</td></tr>
-<tr><td>C45</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td></tr>
-<tr><td>C45W</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td></tr>
-<tr><td>C50</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td></tr>
-<tr><td>C52.49</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td></tr>
-<tr><td>DX1000</td><td>12×28</td><td>12×28</td><td>12×25</td><td>18×18</td></tr>
-<tr><td>HX220VL</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td></tr>
+<tr><td>VDC14R / VDK14</td><td>6×10</td><td>6×10</td><td>8×8</td><td>8×8</td></tr>
+<tr><td>C19W</td><td>6×8</td><td>6×10</td><td>8×8</td><td>8×8</td></tr>
+<tr><td>C19</td><td>8×14</td><td>8×10</td><td>8×8</td><td>8×8</td></tr>
+<tr><td>DX225NLC-7M 5.2米</td><td>6×10</td><td>8×12</td><td>8×8</td><td>10×10</td></tr>
+<tr><td>DX225NLCA 5.2米</td><td>6×10</td><td>8×12</td><td>8×8</td><td>10×10</td></tr>
+<tr><td>C20/21/22/23</td><td>8×14</td><td>8×12</td><td>8×12</td><td>10×10</td></tr>
+<tr><td>C21W</td><td>8×10</td><td>8×10</td><td>8×8</td><td>8×8</td></tr>
+<tr><td>C26</td><td>8×17</td><td>8×14</td><td>8×14</td><td>10×10</td></tr>
+<tr><td>C30</td><td>8×17</td><td>上8×14/下8×18</td><td>8×14</td><td>12×12</td></tr>
+<tr><td>C34 / C36</td><td>8×19</td><td>8×16</td><td>8×16</td><td>12×12</td></tr>
+<tr><td>C38</td><td>8×15</td><td>8×18</td><td>8×12</td><td>12×12</td></tr>
+<tr><td>C42 / C45</td><td>8×19</td><td>8×19</td><td>8×20</td><td>13×13</td></tr>
+<tr><td>C50</td><td>8×19</td><td>8×19</td><td>8×19</td><td>14×14</td></tr>
+<tr><td>C52 / C49</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td></tr>
+<tr><td>VDK22 / VMK22</td><td>6×10</td><td>8×12</td><td>8×8</td><td>10×10</td></tr>
+<tr><td>HX340 6.5米</td><td>6×18</td><td>6×18</td><td>6×13</td><td>12×12</td></tr>
+<tr><td>HX500L</td><td>6×16</td><td>6×19</td><td>6×16</td><td>12×12</td></tr>
+<tr><td>HX505VL</td><td>6×19</td><td>6×19</td><td>6×16</td><td>14×14</td></tr>
 </tbody>
 </table>
 </div>
@@ -76,29 +77,39 @@ tr:hover { background: #f0f6ff; }
 <table id="arm-table">
 <thead><tr><th>型号</th><th>鱼头侧12#</th><th>中段11#</th><th>末端侧10#</th><th>上耳座</th><th>下耳座</th></tr></thead>
 <tbody>
-<tr><td>C10</td><td>6×12</td><td>6×12</td><td>6×12</td><td>8×8</td><td>8×8</td></tr>
-<tr><td>C14</td><td>6×12</td><td>6×12</td><td>6×12</td><td>8×8</td><td>8×8</td></tr>
-<tr><td>C17</td><td>6×16</td><td>6×16</td><td>6×12</td><td>10×10</td><td>10×10</td></tr>
-<tr><td>C18</td><td>6×16</td><td>6×16</td><td>6×12</td><td>10×10</td><td>10×10</td></tr>
-<tr><td>C19</td><td>8×16</td><td>8×16</td><td>8×16</td><td>10×10</td><td>10×10</td></tr>
-<tr><td>C19W</td><td>8×16</td><td>8×16</td><td>8×16</td><td>10×10</td><td>10×10</td></tr>
-<tr><td>C22</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td><td>12×12</td></tr>
-<tr><td>C25</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td><td>12×12</td></tr>
-<tr><td>C30</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td><td>14×14</td></tr>
-<tr><td>C30W</td><td>8×19</td><td>8×19</td><td>8×16</td><td>14×14</td><td>14×14</td></tr>
-<tr><td>C33</td><td>8×22</td><td>8×22</td><td>8×19</td><td>14×14</td><td>14×14</td></tr>
-<tr><td>C36</td><td>8×22</td><td>8×22</td><td>8×19</td><td>14×14</td><td>14×14</td></tr>
-<tr><td>C45</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
-<tr><td>C45W</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
-<tr><td>C50</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
-<tr><td>C52.49</td><td>8×19</td><td>8×16</td><td>8×16</td><td>14×14</td><td>14×14</td></tr>
-<tr><td>DX1000</td><td>12×28</td><td>12×28</td><td>12×25</td><td>18×18</td><td>18×18</td></tr>
-<tr><td>HX210HD</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td><td>12×12</td></tr>
-<tr><td>HX220VL</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td><td>12×12</td></tr>
-<tr><td>HX340</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
-<tr><td>DX360</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
-<tr><td>DX210PRO</td><td>8×19</td><td>8×19</td><td>8×16</td><td>12×12</td><td>12×12</td></tr>
-<tr><td>125T</td><td>10×25</td><td>10×25</td><td>10×22</td><td>16×16</td><td>16×16</td></tr>
+<tr><td>C30 2.5米</td><td>6×17</td><td>6×10</td><td>6×14</td><td>10×10</td><td>10×10</td></tr>
+<tr><td>C30 3.1米</td><td>6×17</td><td>6×10</td><td>6×14</td><td>10×10</td><td>12×12</td></tr>
+<tr><td>C34 2.9米</td><td>8×16</td><td>8×12</td><td>8×14</td><td>12×12</td><td>14×14</td></tr>
+<tr><td>C34 3.2米 / C36</td><td>8×18</td><td>8×12</td><td>8×14</td><td>12×12</td><td>14×14</td></tr>
+<tr><td>C38 2.9米</td><td>10×26</td><td>10×12</td><td>10×20</td><td>14×14</td><td>14×14</td></tr>
+<tr><td>C38 3.2米</td><td>10×26</td><td>10×12</td><td>10×20</td><td>14×14</td><td>14×14</td></tr>
+<tr><td>C42</td><td>8×19</td><td>8×11</td><td>8×16</td><td>12×12</td><td>14×14</td></tr>
+<tr><td>C45</td><td>8×19</td><td>8×13</td><td>8×16</td><td>12×12</td><td>14×14</td></tr>
+<tr><td>C50</td><td>8×19</td><td>8×14</td><td>8×16</td><td>14×14</td><td>14×14</td></tr>
+<tr><td>C52 / C49</td><td>8×19</td><td>8×16</td><td>8×16</td><td>14×14</td><td>14×14</td></tr>
+<tr><td>DX680 2.9米</td><td>6×19</td><td>6×16</td><td>8×22</td><td>筋条8×8 / 护板6×6</td><td>16×16</td></tr>
+<tr><td>DX680 2.6米</td><td>8×22</td><td>8×16</td><td>8×22</td><td>筋条8×8 / 护板8×8</td><td>16×16</td></tr>
+<tr><td>DX705HD-10 2.9米</td><td>6×19</td><td>6×19</td><td>8×22</td><td>筋条8×8 / 护板8×8</td><td>—</td></tr>
+<tr><td>DX705HD-10 2.6米</td><td>8×22</td><td>8×22</td><td>8×22</td><td>筋条8×8 / 护板8×8</td><td>—</td></tr>
+<tr><td>DX800</td><td>8×22</td><td>6×19</td><td>8×22</td><td>筋条8×8 / 护板6×6</td><td>—</td></tr>
+<tr><td>DX1000</td><td>12×26</td><td>12×21</td><td>12×填满坡口</td><td>筋条8×8 / 护板8×8</td><td>—</td></tr>
+<tr><td>DX1250</td><td>6×30</td><td>6×20</td><td>6×22</td><td>/</td><td>护板8×8</td></tr>
+<tr><td>DX150</td><td>10×33</td><td>10×25</td><td>11×焊满坡口</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 现代小臂焊脚 -->
+<div id="modern-arm" class="content">
+<input type="text" class="search-box" placeholder="搜索型号..." oninput="searchTable(this,'modern-arm-table')">
+<table id="modern-arm-table">
+<thead><tr><th>型号</th><th>鱼头侧12#</th><th>中段11#</th><th>末端侧10#</th><th>上耳座</th><th>下耳座</th></tr></thead>
+<tbody>
+<tr><td>HX220HD-KEBAE</td><td>6×14</td><td>6×8</td><td>6×10</td><td>12×12</td><td>12×12</td></tr>
+<tr><td>HX220VL-KEBAF</td><td>8×14</td><td>6×9</td><td>8×12</td><td>12×12</td><td>12×12</td></tr>
+<tr><td>DX210-10-CEBGT</td><td>8×14</td><td>6×9</td><td>8×12</td><td>10×10</td><td>10×10</td></tr>
+<tr><td>HX340-KECAD</td><td>6×16</td><td>6×10</td><td>6×14</td><td>12×12</td><td>12×12</td></tr>
+<tr><td>DX360LC-7B CECJR</td><td>6×18</td><td>6×12</td><td>6×14</td><td>12×12</td><td>14×14</td></tr>
 </tbody>
 </table>
 </div>
