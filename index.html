@@ -41,6 +41,7 @@ tr:hover { background: #f0f6ff; }
 <button class="tab" onclick="showTab('kg9')">9号机</button>
 <button class="tab" onclick="showTab('kg10')">10号机</button>
 <button class="tab" onclick="showTab('alarm')">焊机报警</button>
+<button class="tab" onclick="showTab('gun')">焊枪区分指导书</button>
 </div>
 
 <!-- 大臂焊脚 -->
@@ -282,6 +283,134 @@ tr:hover { background: #f0f6ff; }
 
 <div class="section-title">⚠️ 异常显示时可以操作的功能</div>
 <div class="note">发生了异常的时候，前控制面板上显示异常代码。<br>即使在紧急停止（异常代码：E-000）以及水压异常（异常代码：E-307）的状态下，也可以进行送丝操作。在异常显示状态中进行操作的时候，请务必确认周围的安全后再进行操作。</div>
+</div>
+
+<!-- 焊枪区分指导书 -->
+<div id="gun" class="content">
+<div class="section-title">🔫 150T ARM（3.1米）焊枪区分作业指导书</div>
+<div class="note">150T ARM ROBOT焊接时由于焊接坡口较深，多发与焊枪喷嘴干涉情况，为保证焊接品质，焊接作业时部分焊缝需将不用侧喷嘴及导电嘴拆卸，共有以下3种方式：</div>
+
+<div class="flow-step"><b>方式1：同时使用L和R焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>左侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>右侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>护板</td><td>A/B</td><td>L R</td></tr>
+<tr><td>筋条</td><td>A/B</td><td>L R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式2：使用R焊枪 + 拆卸L导电嘴</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>A</td><td>R</td></tr>
+<tr><td>1#下</td><td>A</td><td>R</td></tr>
+<tr><td>4#左</td><td>A</td><td>R</td></tr>
+<tr><td>5#右</td><td>A</td><td>R</td></tr>
+<tr><td>6#左</td><td>B</td><td>R</td></tr>
+<tr><td>6#右</td><td>B</td><td>R</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>A</td><td>R</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>A</td><td>R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式3：使用L焊枪 + 拆卸R导电嘴</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>4#右</td><td>A</td><td>L</td></tr>
+<tr><td>5#左</td><td>A</td><td>L</td></tr>
+<tr><td>7#</td><td>B</td><td>L</td></tr>
+<tr><td>8#</td><td>B</td><td>L</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>B</td><td>L</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>B</td><td>L</td></tr>
+</tbody></table></div>
+
+<div class="note"><b>150T 重点事项：</b><br>1. 在拆卸不作业焊枪时一定要将分流器一并拆卸下来，避免发生焊接时分流器掉落至焊道中，发生焊接缺陷。<br>2. 拆卸不用焊枪的导电嘴后使用6MM螺栓将导电杆端部拧紧堵住，避免焊接中飞溅堵塞螺纹。<br>3. 进行不使用焊枪喷嘴及导电嘴的拆卸时一定要暂停设备后进行操作，避免发生碰撞事故。<br>4. 该作业指导书只适用于150T（3.1m）ARM机种ROBOT焊接作业。</div>
+
+<div class="section-title">🔫 100T 焊枪区分作业指导书</div>
+<div class="note">100T ARM ROBOT焊接时由于焊接坡口较深，多发与焊枪喷嘴干涉情况，为保证焊接品质，焊接作业时部分焊缝需将不用侧喷嘴拆卸，共有以下4种方式：</div>
+
+<div class="flow-step"><b>方式1：同时使用L和R焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>5#左</td><td>A</td><td>L R</td></tr>
+<tr><td>5#右</td><td>A</td><td>L R</td></tr>
+<tr><td>4#左</td><td>A</td><td>L R</td></tr>
+<tr><td>4#右</td><td>A</td><td>L R</td></tr>
+<tr><td>左侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>右侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>护板</td><td>A/B</td><td>L R</td></tr>
+<tr><td>筋条</td><td>A/B</td><td>L R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式2：仅使用R焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>A</td><td>R</td></tr>
+<tr><td>1#下</td><td>A</td><td>R</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>A</td><td>R</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>B</td><td>R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式3：仅使用L焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>7#</td><td>B</td><td>L</td></tr>
+<tr><td>8#</td><td>B</td><td>L</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>A</td><td>L</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>B</td><td>L</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式4：使用R焊枪 + 拆卸L导电嘴</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>6#左</td><td>B</td><td>R</td></tr>
+<tr><td>6#右</td><td>B</td><td>R</td></tr>
+</tbody></table>
+<div class="note">注：拆卸导不用焊枪的电嘴后使用6MM螺栓将导电杆端部拧紧堵住，避免飞溅堵塞丝扣。</div></div>
+
+<div class="note"><b>100T 重点事项：</b><br>1. 在拆卸不作业焊枪时一定要将分流器一并拆卸下来，避免发生焊接时分流器掉落至焊道中，发生焊接缺陷。<br>2. 进行不使用焊枪喷嘴的拆卸时一定要暂停设备后进行操作，避免发生碰撞事故。<br>3. 该作业指导书只适用于100T ARM机种ROBOT焊接作业。</div>
+
+<div class="section-title">🔫 125T ARM 焊枪区分作业指导书</div>
+<div class="note">125T ARM ROBOT焊接时由于焊接坡口较深，多发与焊枪喷嘴干涉情况，为保证焊接品质，焊接作业时部分焊缝需将不用侧喷嘴拆卸，共有以下3种方式：</div>
+
+<div class="flow-step"><b>方式1：同时使用L和R焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>5#左</td><td>A</td><td>L R</td></tr>
+<tr><td>5#右</td><td>A</td><td>L R</td></tr>
+<tr><td>4#左</td><td>A</td><td>L R</td></tr>
+<tr><td>4#右</td><td>A</td><td>L R</td></tr>
+<tr><td>2#左</td><td>A</td><td>L R</td></tr>
+<tr><td>2#右</td><td>A</td><td>L R</td></tr>
+<tr><td>6#左</td><td>B</td><td>L R</td></tr>
+<tr><td>6#右</td><td>B</td><td>L R</td></tr>
+<tr><td>左侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>右侧角焊缝（盖面）</td><td>A/B</td><td>L R</td></tr>
+<tr><td>护板</td><td>A/B</td><td>L R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式2：仅使用R焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>A</td><td>R</td></tr>
+<tr><td>1#下</td><td>A</td><td>R</td></tr>
+<tr><td>7#</td><td>B</td><td>R</td></tr>
+<tr><td>8#</td><td>B</td><td>R</td></tr>
+<tr><td>3#左</td><td>B</td><td>R</td></tr>
+<tr><td>3#右</td><td>B</td><td>R</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>A</td><td>R</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>B</td><td>R</td></tr>
+</tbody></table></div>
+
+<div class="flow-step"><b>方式3：仅使用L焊枪</b><br>
+<table><thead><tr><th>焊缝</th><th>作业区分</th><th>使用焊枪</th></tr></thead>
+<tbody>
+<tr><td>9#</td><td>A</td><td>L</td></tr>
+<tr><td>左侧角焊缝（打底）</td><td>A</td><td>L</td></tr>
+<tr><td>右侧角焊缝（打底）</td><td>B</td><td>L</td></tr>
+</tbody></table></div>
+
+<div class="note"><b>125T 重点事项：</b><br>1. 在拆卸不作业焊枪时一定要将分流器一并拆卸下来，避免发生焊接时分流器掉落至焊道中，发生焊接缺陷。<br>2. 再次使用已拆卸焊枪时检查导电杆出气孔有无堵塞情况。<br>3. 2#3#缝焊前使用锡纸对黄油孔进行保护。<br>4. 125T ARM ROBOT焊接主程序-712，变位机运行程序-125。<br>5. 大型机角焊缝覆盖层焊接作业时需重点观察，及时在线调整焊接速度和摆动宽度等参数，避免外观品质缺陷发生。</div>
+
 </div>
 
 <script>
