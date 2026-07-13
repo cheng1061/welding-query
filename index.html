@@ -48,6 +48,7 @@ tr:hover { background: #f0f6ff; }
 <button class="tab" onclick="showTab('kg13')">13号机</button>
 <button class="tab" onclick="showTab('alarm')">焊机报警</button>
 <button class="tab" onclick="showTab('gun')">焊枪区分指导书</button>
+<button class="tab" onclick="showTab('arm_proc')">ARM焊接工序</button>
 </div>
 
 <!-- 大臂焊脚 -->
@@ -578,6 +579,114 @@ tr:hover { background: #f0f6ff; }
 
 <div class="note"><b>125T 重点事项：</b><br>1. 在拆卸不作业焊枪时一定要将分流器一并拆卸下来，避免发生焊接时分流器掉落至焊道中，发生焊接缺陷。<br>2. 再次使用已拆卸焊枪时检查导电杆出气孔有无堵塞情况。<br>3. 2#3#缝焊前使用锡纸对黄油孔进行保护。<br>4. 125T ARM ROBOT焊接主程序-712，变位机运行程序-125。<br>5. 大型机角焊缝覆盖层焊接作业时需重点观察，及时在线调整焊接速度和摆动宽度等参数，避免外观品质缺陷发生。</div>
 
+</div>
+
+<!-- ARM焊接工序 -->
+<div id="arm_proc" class="content">
+<div class="section-title">📋 ARM焊接工序 — 各焊缝步骤号对应表</div>
+<div class="note">每条焊缝对应的程序执行步骤号范围（从第几步到第几步）</div>
+
+<!-- 1020 -->
+<div class="section-title" style="font-size:1em;">DX210 PRO（1020）</div>
+<table id="t_arm1020">
+<thead><tr><th>工序</th><th>焊缝位置</th><th>步骤范围</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>—</td><td>8 ~ 36</td></tr>
+<tr><td>8#</td><td>—</td><td>37 ~ 67</td></tr>
+<tr><td>翻转</td><td>—</td><td>68 ~ 69</td></tr>
+<tr><td>1#下</td><td>—</td><td>70 ~ 101</td></tr>
+<tr><td>护板</td><td>—</td><td>102 ~ 154</td></tr>
+<tr><td>加强筋</td><td>—</td><td>155 ~ 224</td></tr>
+<tr><td>7#</td><td>—</td><td>226 ~ 257</td></tr>
+<tr><td>暂停信号</td><td>—</td><td>258</td></tr>
+<tr><td rowspan="6">打底</td><td>4#左</td><td>259 ~ 276</td></tr>
+<tr><td>5#左</td><td>277 ~ 295</td></tr>
+<tr><td>6#左</td><td>296 ~ 331</td></tr>
+<tr><td>4#右</td><td>332 ~ 349</td></tr>
+<tr><td>5#右</td><td>350 ~ 369</td></tr>
+<tr><td>6#右</td><td>370 ~ 405</td></tr>
+<tr><td>右打底</td><td>—</td><td>406 ~ 473</td></tr>
+<tr><td>左打底</td><td>—</td><td>474 ~ 538</td></tr>
+<tr><td rowspan="8">盖面</td><td>4#左</td><td>539 ~ 544</td></tr>
+<tr><td>5#左</td><td>545 ~ 553</td></tr>
+<tr><td>6#左</td><td>554 ~ 575</td></tr>
+<tr><td>角焊左</td><td>576 ~ 601</td></tr>
+<tr><td>4#右</td><td>602 ~ 614</td></tr>
+<tr><td>5#右</td><td>615 ~ 619</td></tr>
+<tr><td>6#右</td><td>620 ~ 637</td></tr>
+<tr><td>角焊右</td><td>638 ~ 667</td></tr>
+<tr><td>耳朵右</td><td>—</td><td>668 ~ 710</td></tr>
+<tr><td>耳朵左</td><td>—</td><td>711 ~ 749</td></tr>
+<tr><td>ARM水平</td><td>—</td><td>750</td></tr>
+</tbody>
+</table>
+
+<!-- 1012 -->
+<div class="section-title" style="font-size:1em;">HX210(220)HD（1012）</div>
+<table id="t_arm1012">
+<thead><tr><th>工序</th><th>焊缝位置</th><th>步骤范围</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>—</td><td>8 ~ 37</td></tr>
+<tr><td>1#下</td><td>—</td><td>38 ~ 68</td></tr>
+<tr><td>护板</td><td>—</td><td>69 ~ 121</td></tr>
+<tr><td>暂停信号</td><td>—</td><td>—</td></tr>
+<tr><td rowspan="6">打底</td><td>4#左</td><td>122 ~ 138</td></tr>
+<tr><td>5#左</td><td>139 ~ 157</td></tr>
+<tr><td>6#左</td><td>158 ~ 193</td></tr>
+<tr><td>4#右</td><td>194 ~ 211</td></tr>
+<tr><td>5#右</td><td>212 ~ 230</td></tr>
+<tr><td>6#右</td><td>231 ~ 266</td></tr>
+<tr><td>右打底</td><td>—</td><td>267 ~ 329</td></tr>
+<tr><td>左打底</td><td>—</td><td>330 ~ 391</td></tr>
+<tr><td>暂停信号</td><td>—</td><td>—</td></tr>
+<tr><td rowspan="8">盖面</td><td>4#左</td><td>392 ~ 396</td></tr>
+<tr><td>5#左</td><td>397 ~ 404</td></tr>
+<tr><td>6#左</td><td>405 ~ 427</td></tr>
+<tr><td>角焊左</td><td>428 ~ 460</td></tr>
+<tr><td>4#右</td><td>461 ~ 468</td></tr>
+<tr><td>5#右</td><td>469 ~ 477</td></tr>
+<tr><td>6#右</td><td>478 ~ 498</td></tr>
+<tr><td>角焊右</td><td>499 ~ 531</td></tr>
+<tr><td>耳朵右</td><td>—</td><td>532 ~ 591</td></tr>
+<tr><td>耳朵左</td><td>—</td><td>592 ~ 654</td></tr>
+<tr><td>小耳朵右</td><td>—</td><td>655 ~ 680</td></tr>
+<tr><td>小耳朵左</td><td>—</td><td>681 ~ 708</td></tr>
+<tr><td>ARM水平</td><td>—</td><td>709</td></tr>
+</tbody>
+</table>
+
+<!-- 1070 -->
+<div class="section-title" style="font-size:1em;">HX340（1070）</div>
+<table id="t_arm1070">
+<thead><tr><th>工序</th><th>焊缝位置</th><th>步骤范围</th></tr></thead>
+<tbody>
+<tr><td>1#上</td><td>—</td><td>8 ~ 38</td></tr>
+<tr><td>1#下</td><td>—</td><td>39 ~ 74</td></tr>
+<tr><td>护板</td><td>—</td><td>75 ~ 126</td></tr>
+<tr><td>暂停信号</td><td>—</td><td>—</td></tr>
+<tr><td rowspan="6">打底</td><td>4#左</td><td>127 ~ 145</td></tr>
+<tr><td>5#左</td><td>146 ~ 164</td></tr>
+<tr><td>6#左</td><td>165 ~ 200</td></tr>
+<tr><td>4#右</td><td>201 ~ 218</td></tr>
+<tr><td>5#右</td><td>219 ~ 237</td></tr>
+<tr><td>6#右</td><td>238 ~ 273</td></tr>
+<tr><td>右打底</td><td>—</td><td>274 ~ 337</td></tr>
+<tr><td>左打底</td><td>—</td><td>338 ~ 401</td></tr>
+<tr><td rowspan="8">盖面</td><td>4#左</td><td>402 ~ 410</td></tr>
+<tr><td>5#左</td><td>411 ~ 425</td></tr>
+<tr><td>6#左</td><td>426 ~ 459</td></tr>
+<tr><td>角焊左</td><td>460 ~ 520</td></tr>
+<tr><td>4#右</td><td>521 ~ 531</td></tr>
+<tr><td>5#右</td><td>532 ~ 543</td></tr>
+<tr><td>6#右</td><td>544 ~ 576</td></tr>
+<tr><td>角焊右</td><td>577 ~ 638</td></tr>
+<tr><td>耳朵右</td><td>—</td><td>639 ~ 699</td></tr>
+<tr><td>耳朵左</td><td>—</td><td>700 ~ 763</td></tr>
+<tr><td>小耳朵右</td><td>—</td><td>764 ~ 801</td></tr>
+<tr><td>小耳朵左</td><td>—</td><td>802 ~ 840</td></tr>
+<tr><td>ARM水平</td><td>—</td><td>841</td></tr>
+</tbody>
+</table>
 </div>
 
 <script>
