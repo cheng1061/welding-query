@@ -1,5 +1,5 @@
 // 焊接作业查询APP - Service Worker
-const CACHE_NAME = 'welding-query-v1';
+const CACHE_NAME = 'welding-query-v2';
 const ASSETS = [
   './',
   './index.html',
