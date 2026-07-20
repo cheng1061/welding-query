@@ -37,6 +37,9 @@ tr:hover { background: #f0f6ff; }
 </head>
 <body>
 <h1>焊接作业查询</h1>
+<div id="install-bar" style="display:none;text-align:center;margin-bottom:10px;">
+<button id="install-btn" style="padding:10px 24px;background:#34a853;color:white;border:none;border-radius:8px;font-size:15px;cursor:pointer;">📱 添加到手机桌面</button>
+</div>
 
 <div class="tabs">
 <button class="tab active" onclick="showTab('boom')">大臂焊脚</button>
@@ -711,6 +714,29 @@ function searchTable(input, tableId) {
     row.style.display = text.indexOf(filter) > -1 ? '' : 'none';
   });
 }
+</script>
+<script>
+// PWA 安装提示
+var deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('install-bar').style.display = 'block';
+});
+document.getElementById('install-btn').addEventListener('click', function() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function() {
+      deferredPrompt = null;
+      document.getElementById('install-bar').style.display = 'none';
+    });
+  } else {
+    alert('请尝试以下方法添加到桌面：\n\n安卓Chrome：点右上角⋮ → 添加到主屏幕\n\n如果用的是扣子App内置浏览器，请复制下面链接到Chrome浏览器打开：\nhttps://cheng1061.github.io/welding-query/');
+  }
+});
+window.addEventListener('appinstalled', function() {
+  document.getElementById('install-bar').style.display = 'none';
+});
 </script>
 <script>
 if ('serviceWorker' in navigator) {
