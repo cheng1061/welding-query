@@ -37,7 +37,7 @@ tr:hover { background: #f0f6ff; }
 </head>
 <body>
 <h1>焊接作业查询</h1>
-<div id="install-bar" style="display:none;text-align:center;margin-bottom:10px;">
+<div id="install-bar" style="text-align:center;margin-bottom:10px;">
 <button id="install-btn" style="padding:10px 24px;background:#34a853;color:white;border:none;border-radius:8px;font-size:15px;cursor:pointer;">📱 添加到手机桌面</button>
 </div>
 
@@ -731,7 +731,7 @@ document.getElementById('install-btn').addEventListener('click', function() {
       document.getElementById('install-bar').style.display = 'none';
     });
   } else {
-    alert('请尝试以下方法添加到桌面：\n\n安卓Chrome：点右上角⋮ → 添加到主屏幕\n\n如果用的是扣子App内置浏览器，请复制下面链接到Chrome浏览器打开：\nhttps://cheng1061.github.io/welding-query/');
+    alert('添加到桌面方法：\n\n1. 点浏览器底部菜单按钮（三横线或三点）\n2. 找到「添加到主屏幕」或「添加快捷方式」\n3. 点确认，桌面就会出现焊接查询图标\n\n如果找不到该选项，请用Chrome浏览器打开：\nhttps://cheng1061.github.io/welding-query/');
   }
 });
 window.addEventListener('appinstalled', function() {
